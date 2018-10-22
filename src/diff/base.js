@@ -24,8 +24,8 @@ Diff.prototype = {
     oldString = this.castInput(oldString);
     newString = this.castInput(newString);
 
-    oldString = this.removeEmpty(this.tokenize(oldString));
-    newString = this.removeEmpty(this.tokenize(newString));
+    oldString = this.removeEmpty(this.tokenize(oldString, options.customTokenRegex));
+    newString = this.removeEmpty(this.tokenize(newString, options.customTokenRegex));
 
     let newLen = newString.length, oldLen = oldString.length;
     let editLength = 1;

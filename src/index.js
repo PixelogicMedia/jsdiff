@@ -17,6 +17,7 @@
 import Diff from './diff/base';
 import {diffChars} from './diff/character';
 import {diffWords, diffWordsWithSpace} from './diff/word';
+import {diffCustomWords, diffCustomWordsWithSpace, setCustomRegex} from './diff/custom_word';
 import {diffLines, diffTrimmedLines} from './diff/line';
 import {diffSentences} from './diff/sentence';
 
@@ -39,6 +40,9 @@ export {
   diffChars,
   diffWords,
   diffWordsWithSpace,
+  diffCustomWords,
+  diffCustomWordsWithSpace,
+  setCustomRegex,
   diffLines,
   diffTrimmedLines,
   diffSentences,

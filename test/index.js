@@ -9,6 +9,8 @@ describe('root exports', function() {
     expect(Diff.diffChars).to.exist;
     expect(Diff.diffWords).to.exist;
     expect(Diff.diffWordsWithSpace).to.exist;
+    expect(Diff.diffCustomWords).to.exist;
+    expect(Diff.diffCustomWordsWithSpace).to.exist;
     expect(Diff.diffLines).to.exist;
     expect(Diff.diffTrimmedLines).to.exist;
     expect(Diff.diffSentences).to.exist;
